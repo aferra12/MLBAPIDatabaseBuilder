@@ -65,3 +65,5 @@ Player_Data_2022 on Game_Data_2022.batterId=Player_Data_2022.id
 where (Game_Data_2022.isInPlay or (Game_Data_2022.isBall and Game_Data_2022.balls=4) or (Game_Data_2022.isStrike and Game_Data_2022.strikes=3))
 group by Player_Data_2022.fullName HAVING count(Player_Data_2022.fullName)>502) order by avgexitvelo DESC
 
+
+NOTE: Database is not included due to size restrictions. However, it can be easily regenerated from the code.
